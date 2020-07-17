@@ -55,6 +55,9 @@ checkSave.onclick = () => {
 	if (check6.checked == true) {
 		document.cookie = 'check6=true; max-age: 3600';
 	};
+	if (check1.checked == false && check2.checked == false && check3.checked == false && check4.checked == false && check5.checked == false && check6.checked == false) {
+		document.cookie = 'check=true; max-age: 3600';
+	}
 }
 
 //onload section
@@ -114,6 +117,14 @@ window.onload = () => {
 	}
 	if (document.cookie.includes('check6=true')) {
 		check6.checked = true;
+		check1.disabled = true;
+		check2.disabled = true;
+		check3.disabled = true;
+		check4.disabled = true;
+		check5.disabled = true;
+		check6.disabled = true;
+	}
+	if (document.cookie.includes('check=true')) {
 		check1.disabled = true;
 		check2.disabled = true;
 		check3.disabled = true;
