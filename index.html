@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>c3.10</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+</head>
+<body style="font-family: 'VT323', monospace;">
+	<div class="container" style="margin-top: 5%;">
+		<div class="row justify-content-around">
+  			<div class="col-3">
+    			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      				<a class="nav-link active" id="v-pills-city-tab" data-toggle="pill" href="#v-pills-city" role="tab" aria-controls="v-pills-city" aria-selected="true">city</a>
+      				<a class="nav-link" id="v-pills-checkboxes-tab" data-toggle="pill" href="#v-pills-checkboxes" role="tab" aria-controls="v-pills-checkboxes" aria-selected="false">checkboxes</a>
+    			</div>
+  			</div>
+			<div class="col-8">
+    			<div class="tab-content" id="v-pills-tabContent">
+      				<div class="tab-pane fade show active" id="v-pills-city" role="tabpanel" aria-labelledby="v-pills-city-tab">
+      					<form action="">
+      						<input type="text" id="city-input" placeholder="please enter your city" style="margin-top: 1%; width: 33%;">
+      						<p id="info" style="display: none; margin-top: 1%;"></p>
+      						<br>
+							<button id="save" style="margin-top: 2%;" class="btn btn-primary">save data</button>
+							<button id="remove" style="display: none;" class="btn btn-primary">remove data</button>
+      					</form>
+      					
+						
+      				</div>
+      				<div class="tab-pane fade" id="v-pills-checkboxes" role="tabpanel" aria-labelledby="v-pills-checkboxes-tab">
+      					<form>
+      						<div class="form-group">
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck1">
+      								<label class="form-check-label" for="gridCheck1" id="checklabel1">do not call me</label>
+    							</div>
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck2">
+      								<label class="form-check-label" for="gridCheck2" id="checklabel2">i have read terms and conditions</label>
+    							</div>
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck3">
+      								<label class="form-check-label" for="gridCheck3" id="checklabel3">i'm not checking this checkbox</label>
+    							</div>
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck4">
+      								<label class="form-check-label" for="gridCheck4" id="checklabel4">i agree that online freedom is the right to check any checkboxes you want</label>
+    							</div>
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck5">
+      								<label class="form-check-label" for="gridCheck5" id="checklabel5">i'm more than 12 y.o.</label>
+    							</div>
+    							<div class="form-check">
+      								<input class="form-check-input" type="checkbox" id="gridCheck6">
+      								<label class="form-check-label" for="gridCheck6" id="checklabel6">this assignment is excellently done</label>
+    							</div>
+  							</div>
+  							<button type="submit" class="btn btn-primary" id="check-save">save data</button>
+      					</form>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
